@@ -61,6 +61,6 @@ kushabhi5@gmail.com
 - **React JS**: excellent
 - **JavaScript**: excellent
 - **TypeScript**: excellent
-- **NodeJS**: good
+- **Node JS**: good
 - **Java**: average
 - **Android**: average
