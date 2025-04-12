@@ -2,16 +2,18 @@
     <head>
         <style>
             body{
-                width:900px;
+                width:1000px;
                 margin:50px;
                 color: #242424;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
             .title{
                 color:#013D74;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
             p{
-                font-size: 18px;
+                font-size: 15px;
             }
             .container{
                 display: flex;
@@ -22,12 +24,12 @@
             .left{
                 display: flex;
                 flex-direction: column;
-                flex:0.6;
+                flex:0.7;
             }
             .right{
                 display: flex;
                 flex-direction: column;
-                flex: 0.3;
+                flex: 0.22;
             }
             .header{
                 display: flex;
@@ -38,12 +40,12 @@
                 margin-top: 30px;
             }
             .icon{
-                height: 30px;
-                width: 35px;
+                height: 24px;
+                width: 28px;
                 margin-right: 10px;
             }
             .headerText{
-                font-size: 22px;
+                font-size: 15px;
                 font-weight: bold;
                 color: #013D74;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -55,28 +57,21 @@
                 margin-bottom: 6px;
             }
             .bodyLeft{
-                flex:0.2
+                flex:0.08
             }
             .bodyRight{
-                flex:0.79
+                flex:0.88
             }
             .bodyLeft{
-                font-size: 18px;
-                font-weight: bold;
+                font-size: 13px;
             }
             .subTitle{
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: bold;
                 margin-bottom: 8px;
-            }
-            .subTitleSkill{
-                font-size: 18px;
-                font-weight: bold;
-                margin-bottom: 8px;
-                margin-top: 15px;
             }
             .subText{
-                font-size: 16px;
+                font-size: 15px;
                 font-style: italic;
                 margin-bottom: 12px;
             }
@@ -84,7 +79,7 @@
 
             }
             li{
-                font-size: 16px;
+                font-size: 15px;
                 margin-bottom: 9px;
             }
             a{
@@ -93,20 +88,35 @@
             .rightText{
                 margin-bottom: 20px;
             }
-            .social{
+            .row{
                 display: flex;
+                align-items: center;
+                margin-bottom: 12px;
             }
             .skillRow{
                 display: flex;
                 flex-direction: row;
                 width: 260px;
-                /* justify-content: space-between; */
-                align-items: flex-end;
-                border-bottom: 0.5px solid lightgray;
+                margin-top: 18px;
+                margin-bottom: -5px;
+            }
+            .subTitleSkill{
+                font-size: 15px;
             }
             .bar{
-                color: #53799d;
-                margin-top: -10px;
+                background-color: #8cc0f0;
+                height: 4px;
+                color: white;
+            }
+            .barGreen{
+                background-color: #8cf0a3;
+                height: 4px;
+                color: white;
+            }
+            .barGray{
+                background-color: #b1bcb4;
+                height: 4px;
+                color: white;
             }
             .textSkill{
                 margin-left: 10px;
@@ -115,14 +125,15 @@
                 font-size: 14px;
                 margin-bottom: 10px;
             }
+
         </style>
     </head>
     <body>
         <h1 class="title">
-            Abhinandan Kushwaha <!--<span style="font-size:18px; color: red"> // Add Phone no b4 printing</span>-->
+            Abhinandan Kushwaha
         </h1>
-        <p style="font-size: 20px; font-weight: bold; font-style: italic;">
-            With a knack for innovation and appetite for learning, I love problem solving and developing smart applications
+        <p style="font-size: 16px; width: 650px">
+            With a knack for innovation and appetite for learning, I love problem solving and developing smart applications. I am a software engineer with 5+ years of experience in developing mobile and web applications. I have a strong background in React Native, React JS, Micro Front-end, JavaScript, TypeScript and Node JS. I am passionate about open source and have contributed to several libraries.
         </p>
 
 
@@ -132,14 +143,14 @@
                 <div class="header">
                     <img class="icon" src="./zimages/work.png" alt=""/>
                     <div class="headerText">
-                        Work History (5+ years exp)
+                        Work History <span style="color: gray;">5+ years of experience</span>
                     </div>
                 </div>
 
 
                 <div class="mainBody">
                     <div class="bodyLeft">
-                        2022-02 to Current
+                        2022-02 to <div>Current</div>
                     </div>
                     <div class="bodyRight">
                         <div class="subTitle">Member Of Technical Staff</div>
@@ -148,17 +159,26 @@
                         </div>
                         <ul>
                             <li>
-                               Front-end developer in the data modelling team, mainly contributing to the worksheet creation flow using React and GraphQL.
+                                Developing and maintaining the ThoughtSpot mobile app using React Native, Redux, GraphQL, etc 
                             </li>
                             <li>
-                                Developing and maintaining the ThoughtSpot mobile app using React Native, Redux, GraphQL, etc 
+                                Worked on implementing globalisation and internationalisation in the mobile app
+                            </li>
+                            <li>
+                                Contributed in migrating the code for some screens and flows from Angular to React. This also involved adding an additional GraphQl layer for API calls
+                            </li>
+                            <li>
+                                Developed worksheet-v2 UI using React JS, GraphQl, Apollo, Context etc. Used libraries like GoJS to render graphs, AG-grid to render complex tables
+                            </li>
+                            <li>
+                                Mitigated bugs by writing E2E tests using Playwright and contibuted in test automations
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="mainBody">
                     <div class="bodyLeft">
-                        2019-08 to 2022-02
+                        2019-08 to <div>2022-02</div>
                     </div>
                     <div class="bodyRight">
                         <div class="subTitle">Software Engineer</div>
@@ -167,17 +187,20 @@
                         </div>
                         <ul>
                             <li>
-                                Developing mobile applications using React Native, Redux, Node JS, Mongo DB and Firebase
+                                Developed an employee communication app named Endlink using React Native, Redux, Firestore and Google Cloud Functions
                             </li>
                             <li>
-                                Full stack development, hands on experience in web development too
+                                Worked on Milaap Crowd funding app and worked on development, publishing and analytics
+                            </li>
+                            <li>
+                                Worked on a greeting and gifting app which allows scheduling of greetings and gifts using React Native, Redux, MongoDB and Node JS
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="mainBody">
                     <div class="bodyLeft">
-                        2019-01 to 2019-08
+                        2019-01 to <div>2019-08</div>
                     </div>
                     <div class="bodyRight">
                         <div class="subTitle">Software Engineer Intern</div>
@@ -206,54 +229,16 @@
                     </div>
                 </div>
 
-
-
                 <div class="header">
-                    <img class="icon" style="height:40px" src="./zimages/pin.png" alt=""/>
+                    <img class="icon" style="height:32px" src="./zimages/code.png" alt=""/>
                     <div class="headerText">
-                        Projects
+                        Open Source  <span style="color: gray;">( author and maintainer )</span>
                     </div>
                 </div>
                 <div class="mainBody">
                     <ul>
                         <li>
-                            <b>Angular to React migration at ThoughtSpot</b> contributed in migrating the code for some screens and flows from Angular to React. This also involved adding an additional GraphQl layer for API calls.
-                        </li>
-                        <li>
-                            <b>Worksheet-v2 UI at ThoughtSpot</b> using React JS, GraphQl, Apollo, Context etc. Used libraries like GoJS to render graphs, AG-grid to render complex tables.
-                        </li>
-                        <li>
-                            <b>ThoughtSpot mobile app</b> using React Native, Redux, GraphQl, etc 
-                        </li>
-                        <li>
-                            <b>Learning Management System</b> for Medical graduates using React Native, Node JS and MongoDB
-                        </li>
-                        <li>
-                            <b><a href="https://start.milaap.org/">Milaap</a> Crowd funding app</b> using React Native, Redux etc
-                        </li>
-                        <li>
-                            <b>Endlink Employee Communication App</b> using React Native, Firestore and GCP
-                        </li>
-                        <li>
-                            <a href="https://play.google.com/store/apps/details?id=com.ctranslator.abhinandan.ctojavatranslator&hl=en_IN&gl=US">C to JAVA Translator</a> Android app (Personal project during college)
-                        </li>
-                        <li>
-                            <a href="https://crosswordgame.web.app/">Crossword</a> Online multiplayer game using React JS and Firebase (Personal project)
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="header">
-                    <img class="icon" style="height:36px" src="./zimages/code.png" alt=""/>
-                    <div class="headerText">
-                        Open Source <span style="color: gray; font-size: 20px;">( author and maintainer )</span>
-                    </div>
-                </div>
-                <div class="mainBody">
-                    <ul>
-                        <li>
-                            <a href="https://www.npmjs.com/package/react-native-gifted-charts"><b>react-native-gifted-charts</b></a>- A react native library for Bar, Line, Area, Pie, Donut, Stacked Bar, Radar and Pyramid charts. Allows 2D, 3D, gradient, animations and live data updates.
+                            <a href="https://www.npmjs.com/package/react-native-gifted-charts"><b>react-native-gifted-charts</b></a> - A react native library for Bar, Line, Area, Pie, Donut, Stacked Bar, Radar and Pyramid charts. Allows 2D, 3D, gradient, animations and live data updates.
                         </li>
                         <li>
                             <a href="https://www.npmjs.com/package/react-gifted-charts"><b>react-gifted-charts</b></a> - ReactJS counterpart of react-native-gifted-charts.
@@ -269,7 +254,27 @@
                         </li>
                     </ul>
                 </div>
-                
+
+                <div class="header">
+                    <img class="icon" style="height:30px" src="./zimages/pin.png" alt=""/>
+                    <div class="headerText">
+                        Additional Projects
+                    </div>
+                </div>
+                <div class="mainBody">
+                    <ul>
+                        <li>
+                            <b>Learning Management System</b> for Medical graduates using React Native, Node JS and MongoDB
+                        </li>
+                        <li>
+                            <a href="https://crosswordgame.web.app/">Crossword</a> Online multiplayer game using React JS and Firebase (Personal project)
+                        </li>
+                        <li>Logic Circuit Simulator (college project)- an Android app that takes pictures of logic circuits and solves them and provides expressions and truth table for result</li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.ctranslator.abhinandan.ctojavatranslator&hl=en_IN&gl=US">C to JAVA Translator</a> Android app (Personal project during college)
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="right">
@@ -281,7 +286,7 @@
                 </div>
 
                 <div class="subTitle">Address</div>
-                <div class="rightText">#35, Bhuvanappa Layout, SG Palya, Bengaluru, Karnataka, India, 560029</div>
+                <div class="rightText">Bengaluru, Karnataka, India</div>
 
                 <div class="subTitle">Phone</div>
                 <div class="rightText">+917081943252</div>
@@ -290,97 +295,110 @@
                 <div class="rightText">kushabhi5@gmail.com</div>
 
                 <div class="subTitle">Social</div>
-                <div class="social">
+                
                     <a href="https://www.linkedin.com/in/abhinandan-kushwaha-42a15417a/">
-                        <img src="./zimages/linked.png" class="icon" alt=""/>
+                        <div class="row">
+                            <img src="./zimages/linked.png" class="icon" alt=""/>
+                            linkedin.com/in/abhinandan-kushwaha-42a15417a/
+                        </div>
                     </a>
                     <a href="https://github.com/Abhinandan-Kushwaha">
-                        <img src="./zimages/git.png" class="icon" alt=""/>
+                        <div class="row">
+                            <img src="./zimages/git.png" class="icon" style="width: 22px;" alt=""/>
+                            github.com/Abhinandan-Kushwaha
+                        </div>
                     </a>
                     <a href="https://www.npmjs.com/~ak_97">
-                        <img src="./zimages/npm.jpg" class="icon" alt=""/>
+                        <div class="row">
+                            <img src="./zimages/npm.jpg" class="icon" style="width: 24px;" alt=""/>
+                            npmjs.com/~ak_97
+                        </div>
                     </a>
-                </div>
 
 
                 <div class="header" style="margin-top:50px">
-                    <img class="icon" style="height: 40px;" src="./zimages/bulb.png" alt=""/>
+                    <img class="icon" style="height: 32px;" src="./zimages/bulb.png" alt=""/>
                     <div class="headerText">
                         Skills
                     </div>
                 </div>
 
-                
-                <div class="skillRow">
-                    <div class="subTitleSkill">React JS</div>
-                    <div class="textSkill" style="color: lightseagreen; font-weight: bold;">( Expert )</div>
-                </div>
-                <div class="bar" style="width:100%"> 🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰 </div>
-
-                
                 <div class="skillRow">
                     <div class="subTitleSkill">React Native</div>
-                    <div class="textSkill" style="color: lightseagreen; font-weight: bold;">( Expert )</div>
+                    <div class="textSkill" style="color: lightseagreen;">( Expert )</div>
                 </div>
-                <div class="bar" style="width:90%"> 🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰 </div>
-
+                <div class="barGreen" style="width:99%"></div>
 
                 <div class="skillRow">
-                    <div class="subTitleSkill">Micro Front-end</div>
-                    <div class="textSkill">( Excellent )</div>
+                    <div class="subTitleSkill">React JS</div>
+                    <div class="textSkill" style="color: lightseagreen;">( Expert )</div>
                 </div>
-                <div class="bar" style="width:90%"> 🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰 </div>
+                
+                <div class="barGreen" style="width:99%"></div>
                 
 
                 <div class="skillRow">
                     <div class="subTitleSkill">JavaScript</div>
                     <div class="textSkill">( Excellent )</div>
                 </div>
-                <div class="bar" style="width:90%"> 🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰 </div>
+                <div class="bar" style="width:80%"></div>
                 
 
                 <div class="skillRow">
                     <div class="subTitleSkill">TypeScript</div>
                     <div class="textSkill">( Excellent )</div>
                 </div>
-                <div class="bar" style="width:90%"> 🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰 </div>
+                <div class="bar" style="width:80%"></div>
+
+                <div class="skillRow">
+                    <div class="subTitleSkill">Micro Front-end</div>
+                    <div class="textSkill">( Excellent )</div>
+                </div>
+                <div class="bar" style="width:80%"></div>
                 
 
                 <div class="skillRow">
                     <div class="subTitleSkill">Node JS</div>
                     <div class="textSkill" style="color: #666">( Good )</div>
                 </div>
-                <div class="bar" style="width:70%"> 🀰🀰🀰🀰🀰🀰🀰🀰🀰 </div>
+                <div class="bar" style="width:65%"></div>
                 
 
                 <div class="skillRow">
                     <div class="subTitleSkill">Java</div>
                     <div class="textSkill" style="color: gray;">( Average )</div>
                 </div>
-                <div class="bar" style="width:50%"> 🀰🀰🀰🀰🀰🀰 </div>
+                <div class="barGray" style="width:50%"></div>
                 
 
                 <div class="skillRow">
                     <div class="subTitleSkill">Android</div>
                     <div class="textSkill" style="color: gray;">( Average )</div>
                 </div>
-                <div class="bar" style="width:50%"> 🀰🀰🀰🀰🀰🀰 </div>
+                <div class="barGray" style="width:50%"></div>
 
 
                 <div class="tools" style="margin-top:40px">
                     <div class="header">
-                        <div class="headerText" style="font-size: 18px;">
-                            DB tools
+                        <div class="headerText" style="font-size: 15px;">
+                            DB
                         </div>
                     </div>
-                    <p style="font-size: 16px;">MongoDB, PostGres, GraphQl, Firestore</p>
+                    <p style="font-size: 15px;">MongoDB, PostGres, GraphQl, Firestore</p>
 
                     <div class="header">
-                        <div class="headerText" style="font-size: 18px;">
-                            Cloud tools
+                        <div class="headerText" style="font-size: 15px;">
+                            Cloud
                         </div>
                     </div>
-                    <p style="font-size: 16px;">Lambda, Amplify, EC2, Google Cloud functions</p>
+                    <p style="font-size: 15px;">AWS Amplify and Lambda, Google Cloud functions</p>
+
+                    <div class="header">
+                        <div class="headerText" style="font-size: 15px;">
+                            Testing and automation
+                        </div>
+                    </div>
+                    <p style="font-size: 15px;">Jest, Playwright, Protractor</p>
                 </div>
             </div>
             
