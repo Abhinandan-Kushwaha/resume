@@ -43,10 +43,10 @@ Rajkiya Engineering College Sonbhadra
 
 ## Contact
 **Address:**  
-#35, Bhuvanappa Layout, SG Palya, Bengaluru, Karnataka, India, 560029  
+Bengaluru, Karnataka, India  
 
 **Phone:**  
-+917081943252  
++91708194XXXX 
 
 **Email:**  
 kushabhi5@gmail.com  
