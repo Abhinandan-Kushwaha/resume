@@ -2,7 +2,7 @@
 
 *With a knack for innovation and an appetite for learning, I love problem solving and developing smart applications.*
 
-## Work History (5+ years exp)
+## Work History (6 years exp)
 
 ### 2025-06 to Current
 **SDE 2**  
