@@ -4,7 +4,13 @@
 
 ## Work History (5+ years exp)
 
-### 2022-02 to Current
+### 2025-06 to Current
+**SDE 2**  
+BestBuy
+- Developing and maintaining the BestBuy customer facing mobile app using React Native, Zustand, GraphQL etc 
+
+
+### 2022-02 to 2025-05
 **Member Of Technical Staff**  
 ThoughtSpot
 - Front-end developer in the data modelling team, mainly contributing to the worksheet creation flow using React and GraphQL.
@@ -52,7 +58,7 @@ Bengaluru, Karnataka, India
 kushabhi5@gmail.com  
 
 **Social:**  
-[LinkedIn](https://www.linkedin.com/in/abhinandan-kushwaha-42a15417a/)  
+[LinkedIn](https://www.linkedin.com/in/abhinandan-kushwaha/)  
 [GitHub](https://github.com/Abhinandan-Kushwaha)  
 [NPM Profile](https://www.npmjs.com/~ak_97)  
 
