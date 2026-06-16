@@ -40,7 +40,7 @@ ThoughtSpot
 - Developing and maintaining the ThoughtSpot mobile app using React Native, Redux, GraphQL, etc.
 
 ### 2019-08 to 2022-02
-**Senior Software Engineer**  
+**Software Engineer**  
 GeekyAnts Software Pvt Ltd
 - Developing mobile applications using React Native, Redux, Node JS, Mongo DB, and Firebase.
 - Full stack development, hands-on experience in web development too.
