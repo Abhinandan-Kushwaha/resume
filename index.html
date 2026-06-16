@@ -1,450 +1,507 @@
 <html>
-    <head>
-        <style>
-            body{
-                width:1000px;
-                margin:50px;
-                color: #242424;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            .title{
-                color:#013D74;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-            p{
-                font-size: 15px;
-            }
-            .container{
-                display: flex;
-                justify-content: space-between;
-                margin-top: 10px;
-                margin-bottom: 20px;
-            }
-            .left{
-                display: flex;
-                flex-direction: column;
-                flex:0.7;
-            }
-            .right{
-                display: flex;
-                flex-direction: column;
-                flex: 0.22;
-            }
-            .header{
-                display: flex;
-                align-items: center;
-                padding-bottom: 6px;
-                border-bottom: 2px solid lightgray;
-                margin-bottom: 10px;
-                margin-top: 20px;
-            }
-            .icon{
-                height: 24px;
-                width: 28px;
-                margin-right: 10px;
-            }
-            .headerText{
-                font-size: 15px;
-                font-weight: bold;
-                color: #013D74;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-            .mainBody{
-                display: flex;
-                justify-content: space-between;
-                margin-top: 6px;
-                margin-bottom: 6px;
-            }
-            .bodyLeft{
-                flex:0.08
-            }
-            .bodyRight{
-                flex:0.88
-            }
-            .bodyLeft{
-                font-size: 13px;
-            }
-            .subTitle{
-                font-size: 15px;
-                font-weight: bold;
-                margin-bottom: 8px;
-            }
-            .subText{
-                font-size: 15px;
-                font-style: italic;
-                font-weight: bold;
-                margin-bottom: 12px;
-            }
-            ul{
+  <head>
+    <style>
+      body {
+        width: 1000px;
+        margin: 50px;
+        color: #242424;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .title {
+        color: #013d74;
+        font-family:
+          'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      p {
+        font-size: 15px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        flex: 0.7;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        flex: 0.22;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        padding-bottom: 6px;
+        border-bottom: 2px solid lightgray;
+        margin-bottom: 6px;
+        margin-top: 10px;
+      }
+      .icon {
+        height: 24px;
+        width: 28px;
+        margin-right: 10px;
+      }
+      .headerText {
+        font-size: 15px;
+        font-weight: bold;
+        color: #013d74;
+        font-family:
+          'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .mainBody {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+      .bodyLeft {
+        flex: 0.08;
+      }
+      .bodyRight {
+        flex: 0.88;
+      }
+      .bodyLeft {
+        font-size: 13px;
+      }
+      .subTitle {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .subText {
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      ul {
+      }
+      li {
+        font-size: 15px;
+        margin-bottom: 9px;
+      }
+      a {
+        color: rgb(1, 95, 133);
+      }
+      .rightText {
+        margin-bottom: 20px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .skillRow {
+        display: flex;
+        flex-direction: row;
+        width: 260px;
+        margin-top: 18px;
+        margin-bottom: -5px;
+      }
+      .subTitleSkill {
+        font-size: 15px;
+      }
+      .bar {
+        background-color: #8cc0f0;
+        height: 4px;
+        color: white;
+      }
+      .barGreen {
+        background-color: #8cf0a3;
+        height: 4px;
+        color: white;
+      }
+      .barGray {
+        background-color: #b1bcb4;
+        height: 4px;
+        color: white;
+      }
+      .textSkill {
+        margin-left: 10px;
+        color: green;
+        font-weight: normal;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Abhinandan Kushwaha</h1>
+    <p style="font-size: 16px; width: 650px">
+      With a knack for innovation and appetite for learning, I love problem
+      solving and developing smart applications. I am a software engineer with
+      7.5 years of experience in developing mobile and web applications. I have
+      a strong background in React Native, React JS, JavaScript, TypeScript,
+      Java and Node JS. I am passionate for open source and have contributed to
+      several libraries.
+    </p>
 
-            }
-            li{
-                font-size: 15px;
-                margin-bottom: 9px;
-            }
-            a{
-                color: rgb(1, 95, 133);
-            }
-            .rightText{
-                margin-bottom: 20px;
-            }
-            .row{
-                display: flex;
-                align-items: center;
-                margin-bottom: 12px;
-            }
-            .skillRow{
-                display: flex;
-                flex-direction: row;
-                width: 260px;
-                margin-top: 18px;
-                margin-bottom: -5px;
-            }
-            .subTitleSkill{
-                font-size: 15px;
-            }
-            .bar{
-                background-color: #8cc0f0;
-                height: 4px;
-                color: white;
-            }
-            .barGreen{
-                background-color: #8cf0a3;
-                height: 4px;
-                color: white;
-            }
-            .barGray{
-                background-color: #b1bcb4;
-                height: 4px;
-                color: white;
-            }
-            .textSkill{
-                margin-left: 10px;
-                color: green;
-                font-weight: normal;
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-
-        </style>
-    </head>
-    <body>
-        <h1 class="title">
-            Abhinandan Kushwaha
-        </h1>
-        <p style="font-size: 16px; width: 650px">
-            With a knack for innovation and appetite for learning, I love problem solving and developing smart applications. I am a software engineer with 6+ years of experience in developing mobile and web applications. I have a strong background in React Native, React JS, JavaScript, TypeScript, Java and Node JS. I am passionate for open source and have contributed to several libraries.
-        </p>
-
-
-        <div class="container">
-            <div class="left">
-
-                <div class="header">
-                    <img class="icon" src="./zimages/work.png" alt=""/>
-                    <div class="headerText">
-                        Work History <span style="color: gray;">6.5 years of experience</span>
-                    </div>
-                </div>
-
-                <div class="mainBody">
-                    <div class="bodyLeft">
-                        2025-08 to <div>Current</div>
-                    </div>
-                    <div class="bodyRight">
-                        <div class="subTitle">SDE 3</div>
-                        <div class="subText">
-                            Quince
-                        </div>
-                        <ul>
-                            <li>
-                                Developing, maintaining and deploying the Quince customer facing mobile app using React Native, Zustand, EAS etc.
-                            </li>
-                            <li>
-                                Initiated and maintained the design systems library for the Quince mobile app in coordination with the web team using the existing design library for the Quince web-app.
-                            </li>
-                            <li>
-                                Integrated error-tracking and alerting service "Datadog" into native iOS and Android apps.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mainBody">
-                    <div class="bodyLeft">
-                        2025-06 to <div>2025-08</div>
-                    </div>
-                    <div class="bodyRight">
-                        <div class="subTitle">SDE 2</div>
-                        <div class="subText">
-                            BestBuy
-                        </div>
-                        <ul>
-                            <li>
-                                Developing and maintaining the BestBuy customer facing mobile app using React Native, Zustand, GraphQL etc.
-                            </li>
-                            <li>
-                                Initiated e2e test automation using Playwright.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mainBody">
-                    <div class="bodyLeft">
-                        2022-02 to <div>2025-05</div>
-                    </div>
-                    <div class="bodyRight">
-                        <div class="subTitle">Member Of Technical Staff 3</div>
-                        <div class="subText">
-                            ThoughtSpot
-                        </div>
-                        <ul>
-                            <li>
-                                Developing and maintaining the ThoughtSpot mobile app using React Native, Redux, GraphQL, Java etc.
-                            </li>
-                            <li>
-                                Worked on implementing globalisation and internationalisation in the mobile app.
-                            </li>
-                            <li>
-                                Worked on improving mobile app performance. Added lazy loading and suspense to reduce screen load time.
-                            </li>
-                            <li>
-                                Streamlined app distribution and live updates in production using Appcenter.
-                            </li>
-                            <li>
-                                Contributed in migrating the code for some screens and flows from Angular to React and Rest to GraphQl.
-                            </li>
-                            <li>
-                                Developed worksheet-v2 UI using React JS, Node JS, GraphQl, Apollo, Context etc. Used libraries like GoJS to render graphs, AG-grid to render complex tables
-                            </li>
-                            <li>
-                                Mitigated bugs by writing E2E tests using Playwright and contributed in test automations
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mainBody">
-                    <div class="bodyLeft">
-                        2019-08 to <div>2022-02</div>
-                    </div>
-                    <div class="bodyRight">
-                        <div class="subTitle">Software Engineer</div>
-                        <div class="subText">
-                            GeekyAnts Software Pvt Ltd
-                        </div>
-                        <ul>
-                            <li>
-                                Developed an employee communication app named Endlink using React Native, Redux, Firestore, Node JS and Google Cloud Functions.
-                            </li>
-                            <li>
-                                Worked on Milaap Crowd funding app and worked on development, publishing and analytics.
-                            </li>
-                            <li>
-                                Worked on a greeting and gifting app which allows scheduling of greetings and gifts using React Native, Redux, MongoDB and Node JS.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mainBody">
-                    <div class="bodyLeft">
-                        2019-01 to <div>2019-08</div>
-                    </div>
-                    <div class="bodyRight">
-                        <div class="subTitle">Software Engineer Intern</div>
-                        <div class="subText">
-                            GeekyAnts Software Pvt Ltd
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="header">
-                    <img class="icon" src="./zimages/edu.png" alt=""/>
-                    <div class="headerText">
-                        Education
-                    </div>
-                </div>
-                <div class="mainBody">
-                    <div class="bodyLeft">
-                        2015 to 2019
-                    </div>
-                    <div class="bodyRight">
-                        <div class="subTitle">Bachelor of Technology: Computer Science</div>
-                        <div class="subText">
-                            Rajkiya Engineering College Sonbhadra
-                        </div>
-                    </div>
-                </div>
-
-                <div class="header">
-                    <img class="icon" style="height:32px" src="./zimages/code.png" alt=""/>
-                    <div class="headerText">
-                        Open Source  <span style="color: gray;">( author and maintainer )</span>
-                    </div>
-                </div>
-                <div class="mainBody">
-                    <ul>
-                        <li>
-                            <a href="https://www.npmjs.com/package/react-native-gifted-charts"><b>react-native-gifted-charts</b></a> - A react native library for Bar, Line, Area, Pie, Donut, Stacked Bar, Radar and Pyramid charts. Allows 2D, 3D, gradient, animations and live data updates.
-                        </li>
-                        <li>
-                            <a href="https://www.npmjs.com/package/react-gifted-charts"><b>react-gifted-charts</b></a> - ReactJS counterpart of react-native-gifted-charts.
-                        </li>
-                        <li>
-                            <a href="https://github.com/Abhinandan-Kushwaha/Fireworks"><b>react-native-fireworks</b></a> - A customizable firework like animation that can be used as a component in a react native project.
-                        </li>
-                        <li>
-                            <a href="https://github.com/Abhinandan-Kushwaha/react-native-screenshot-test"><b>react-native-screenshot-test</b></a> - Screenshot testing tool for react-native apps.
-                        </li>
-                        <li>
-                            <a href="https://github.com/Abhinandan-Kushwaha/screenshot-test-react"><b>screenshot-test-react</b></a> - Screenshot testing tool for react apps.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="header">
-                    <img class="icon" style="height:30px" src="./zimages/pin.png" alt=""/>
-                    <div class="headerText">
-                        Additional Projects
-                    </div>
-                </div>
-                <div class="mainBody">
-                    <ul>
-                        <li>
-                            <b>Learning Management System</b> for Medical graduates using React Native, Node JS and MongoDB
-                        </li>
-                        <li>
-                            <a href="https://crosswordgame.web.app/">Crossword</a> Online multiplayer game using React JS and Firebase (Personal project)
-                        </li>
-                        <li>Logic Circuit Simulator (college project)- an Android app that takes pictures of logic circuits and solves them and provides expressions and truth table for result</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="header">
-                    <img class="icon" src="./zimages/contact.png" alt=""/>
-                    <div class="headerText">
-                        Contact
-                    </div>
-                </div>
-
-                <div class="subTitle">Address</div>
-                <div class="rightText">Bengaluru, Karnataka, India</div>
-
-                <div class="subTitle">Phone</div>
-                <div class="rightText">+917081943252</div>
-
-                <div class="subTitle">Email</div>
-                <div class="rightText">kushabhi5@gmail.com</div>
-
-                <div class="subTitle">Social</div>
-                
-                    <a href="https://www.linkedin.com/in/abhinandan-kushwaha/">
-                        <div class="row">
-                            <img src="./zimages/linked.png" class="icon" alt=""/>
-                            linkedin.com/in/abhinandan-kushwaha
-                        </div>
-                    </a>
-                    <a href="https://github.com/Abhinandan-Kushwaha">
-                        <div class="row">
-                            <img src="./zimages/git.png" class="icon" style="width: 22px;" alt=""/>
-                            github.com/Abhinandan-Kushwaha
-                        </div>
-                    </a>
-                    <a href="https://www.npmjs.com/~ak_97">
-                        <div class="row">
-                            <img src="./zimages/npm.jpg" class="icon" style="width: 24px;" alt=""/>
-                            npmjs.com/~ak_97
-                        </div>
-                    </a>
-
-
-                <div class="header" style="margin-top:50px">
-                    <img class="icon" style="height: 32px;" src="./zimages/bulb.png" alt=""/>
-                    <div class="headerText">
-                        Skills
-                    </div>
-                </div>
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">React Native</div>
-                    <div class="textSkill" style="color: lightseagreen;">( Expert )</div>
-                </div>
-                <div class="barGreen" style="width:99%"></div>
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">React JS</div>
-                    <div class="textSkill" style="color: lightseagreen;">( Expert )</div>
-                </div>
-                
-                <div class="barGreen" style="width:99%"></div>
-                
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">JavaScript</div>
-                    <div class="textSkill">( Excellent )</div>
-                </div>
-                <div class="bar" style="width:80%"></div>
-                
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">TypeScript</div>
-                    <div class="textSkill">( Excellent )</div>
-                </div>
-                <div class="bar" style="width:80%"></div>
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">Node JS</div>
-                    <div class="textSkill">( Excellent )</div>
-                </div>
-                <div class="bar" style="width:80%"></div>
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">Java</div>
-                    <div class="textSkill">( Good )</div>
-                </div>
-                <div class="barGray" style="width:70%"></div>
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">Android</div>
-                    <div class="textSkill" style="color: gray;">( Good )</div>
-                </div>
-                <div class="barGray" style="width:65%"></div>
-                
-
-                <div class="skillRow">
-                    <div class="subTitleSkill">SpringBoot</div>
-                    <div class="textSkill" style="color: gray;">( Average )</div>
-                </div>
-                <div class="barGray" style="width:50%"></div>
-
-
-                <div class="tools" style="margin-top:40px">
-                    <div class="header">
-                        <div class="headerText" style="font-size: 15px;">
-                            DB
-                        </div>
-                    </div>
-                    <p style="font-size: 15px;">MongoDB, PostGres, GraphQl, Sql, Firestore</p>
-
-                    <div class="header">
-                        <div class="headerText" style="font-size: 15px;">
-                            Cloud
-                        </div>
-                    </div>
-                    <p style="font-size: 15px;">AWS Cognito and Lambda, Google Cloud functions, Firebase, Expo EAS</p>
-
-                    <div class="header">
-                        <div class="headerText" style="font-size: 15px;">
-                            Testing and automation
-                        </div>
-                    </div>
-                    <p style="font-size: 15px;">Jest, Playwright, Puppeteer</p>
-                </div>
-            </div>
-            
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <img class="icon" src="./zimages/work.png" alt="" />
+          <div class="headerText">
+            Work History
+            <span style="color: gray">7.5 years of experience</span>
+          </div>
         </div>
-    </body>
+
+        <div class="mainBody">
+          <div class="bodyLeft">
+            2025-08 to
+            <div>Current</div>
+          </div>
+          <div class="bodyRight">
+            <div class="subTitle">SDE 3</div>
+            <div class="subText">Quince</div>
+            <ul>
+              <li>
+                Led the end-to-end development of the Recurring Purchases
+                (Subscription) feature on mobile, owning implementation from
+                requirements gathering and design discussions through launch,
+                maintenance, and iterative improvements.
+              </li>
+              <li>
+                Developed customer reviews functionality and AI-generated review
+                summaries, enhancing the product discovery and decision-making
+                experience.
+              </li>
+              <li>
+                Initiated, built, and maintained the Quince mobile design system
+                library in collaboration with the web team, ensuring consistency
+                and alignment with the existing web design system.
+              </li>
+              <li>
+                Integrated and configured Datadog monitoring, error tracking,
+                and alerting across native iOS and Android applications,
+                improving observability and incident response.
+              </li>
+              <li>
+                Served in on-call rotations as part of technical operations,
+                diagnosing and resolving application crashes, API failures, and
+                production issues to maintain platform reliability.
+              </li>
+              <li>
+                Integrated screenshot-testing as a visual regression tool in the
+                mobile app codebase.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mainBody">
+          <div class="bodyLeft">
+            2025-06 to
+            <div>2025-08</div>
+          </div>
+          <div class="bodyRight">
+            <div class="subTitle">SDE 2</div>
+            <div class="subText">BestBuy</div>
+            <ul>
+              <li>
+                Developing and maintaining the BestBuy customer facing mobile
+                app using React Native, Zustand, GraphQL etc.
+              </li>
+              <li>Initiated e2e test automation using Playwright.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mainBody">
+          <div class="bodyLeft">
+            2022-02 to
+            <div>2025-05</div>
+          </div>
+          <div class="bodyRight">
+            <div class="subTitle">Member Of Technical Staff 3</div>
+            <div class="subText">ThoughtSpot</div>
+            <ul>
+              <li>
+                Developing and maintaining the ThoughtSpot mobile app using
+                React Native, Redux, GraphQL, Java etc.
+              </li>
+              <li>
+                Worked on implementing globalisation and internationalisation in
+                the mobile app.
+              </li>
+              <li>
+                Worked on improving mobile app performance. Added lazy loading
+                and suspense to reduce screen load time.
+              </li>
+              <li>
+                Streamlined app distribution and live updates in production
+                using Appcenter.
+              </li>
+              <li>
+                Contributed in migrating the code for some screens and flows
+                from Angular to React and Rest to GraphQl.
+              </li>
+              <li>
+                Developed worksheet-v2 UI using React JS, Node JS, GraphQl,
+                Apollo, Context etc. Used libraries like GoJS to render graphs,
+                AG-grid to render complex tables
+              </li>
+              <li>
+                Mitigated bugs by writing E2E tests using Playwright and
+                contributed in test automations
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mainBody">
+          <div class="bodyLeft">
+            2019-08 to
+            <div>2022-02</div>
+          </div>
+          <div class="bodyRight">
+            <div class="subTitle">Software Engineer</div>
+            <div class="subText">GeekyAnts Software Pvt Ltd</div>
+            <ul>
+              <li>
+                Developed an employee communication app named Endlink using
+                React Native, Redux, Firestore, Node JS and Google Cloud
+                Functions.
+              </li>
+              <li>
+                Worked on Milaap Crowd funding app and worked on development,
+                publishing and analytics.
+              </li>
+              <li>
+                Worked on a greeting and gifting app which allows scheduling of
+                greetings and gifts using React Native, Redux, MongoDB and Node
+                JS.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mainBody">
+          <div class="bodyLeft">
+            2019-01 to
+            <div>2019-08</div>
+          </div>
+          <div class="bodyRight">
+            <div class="subTitle">Software Engineer Intern</div>
+            <div class="subText">GeekyAnts Software Pvt Ltd</div>
+          </div>
+        </div>
+
+        <div class="header">
+          <img class="icon" src="./zimages/edu.png" alt="" />
+          <div class="headerText">Education</div>
+        </div>
+        <div class="mainBody">
+          <div class="bodyLeft">2015 to 2019</div>
+          <div class="bodyRight">
+            <div class="subTitle">Bachelor of Technology: Computer Science</div>
+            <div class="subText">Rajkiya Engineering College Sonbhadra</div>
+          </div>
+        </div>
+
+        <div class="header">
+          <img
+            class="icon"
+            style="height: 32px"
+            src="./zimages/code.png"
+            alt=""
+          />
+          <div class="headerText">
+            Open Source
+            <span style="color: gray">( author and maintainer )</span>
+          </div>
+        </div>
+        <div class="mainBody" style="margin-top: 0">
+          <ul>
+            <li>
+              <a href="https://www.npmjs.com/package/react-native-gifted-charts"
+                ><b>react-native-gifted-charts</b></a
+              >
+              - A react native library for Bar, Line, Area, Pie, Donut, Stacked
+              Bar, Radar, Pyramid and Bubble charts. Allows 2D, 3D, gradient,
+              animations and live data updates.
+            </li>
+            <li>
+              <a href="https://www.npmjs.com/package/react-gifted-charts"
+                ><b>react-gifted-charts</b></a
+              >
+              - ReactJS counterpart of react-native-gifted-charts.
+            </li>
+            <li>
+              <a href="https://github.com/Abhinandan-Kushwaha/Fireworks"
+                ><b>react-native-fireworks</b></a
+              >
+              - A customizable firework like animation that can be used as a
+              component in a react native project.
+            </li>
+            <li>
+              <a
+                href="https://github.com/Abhinandan-Kushwaha/react-native-screenshot-test"
+                ><b>react-native-screenshot-test</b></a
+              >
+              - Screenshot testing tool for react-native apps.
+            </li>
+            <li>
+              <a
+                href="https://github.com/Abhinandan-Kushwaha/screenshot-test-react"
+                ><b>screenshot-test-react</b></a
+              >
+              - Screenshot testing tool for react apps.
+            </li>
+          </ul>
+        </div>
+
+        <div class="header">
+          <img
+            class="icon"
+            style="height: 30px"
+            src="./zimages/pin.png"
+            alt=""
+          />
+          <div class="headerText">Additional Projects</div>
+        </div>
+        <div class="mainBody">
+          <ul>
+            <li>
+              <a href="https://giftedmaps.com/">Gifted Maps</a>- Comprehensive
+              map of India with states, physical features and political and
+              demographic details. (Personal project)
+            </li>
+            <li>
+              <b>Learning Management System</b> for Medical graduates using
+              React Native, Node JS and MongoDB
+            </li>
+            <li>
+              <a href="https://crosswordgame.web.app/">Crossword</a> Online
+              multiplayer game using React JS and Firebase (Personal project)
+            </li>
+            <li>
+              Logic Circuit Simulator (college project)- an Android app that
+              takes pictures of logic circuits and solves them and provides
+              expressions and truth table for result
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="header">
+          <img class="icon" src="./zimages/contact.png" alt="" />
+          <div class="headerText">Contact</div>
+        </div>
+
+        <div class="subTitle">Address</div>
+        <div class="rightText">Bengaluru, Karnataka, India</div>
+
+        <div class="subTitle">Phone</div>
+        <div class="rightText">+917081943252</div>
+
+        <div class="subTitle">Email</div>
+        <div class="rightText">kushabhi5@gmail.com</div>
+
+        <div class="subTitle">Social</div>
+
+        <a href="https://www.linkedin.com/in/abhinandan-kushwaha/">
+          <div class="row">
+            <img src="./zimages/linked.png" class="icon" alt="" />
+            linkedin.com/in/abhinandan-kushwaha
+          </div>
+        </a>
+        <a href="https://github.com/Abhinandan-Kushwaha">
+          <div class="row">
+            <img
+              src="./zimages/git.png"
+              class="icon"
+              style="width: 22px"
+              alt=""
+            />
+            github.com/Abhinandan-Kushwaha
+          </div>
+        </a>
+        <a href="https://www.npmjs.com/~ak_97">
+          <div class="row">
+            <img
+              src="./zimages/npm.jpg"
+              class="icon"
+              style="width: 24px"
+              alt=""
+            />
+            npmjs.com/~ak_97
+          </div>
+        </a>
+
+        <div class="header" style="margin-top: 50px">
+          <img
+            class="icon"
+            style="height: 32px"
+            src="./zimages/bulb.png"
+            alt=""
+          />
+          <div class="headerText">Skills</div>
+        </div>
+
+        <div class="skillRow">
+          <div class="subTitleSkill">React Native</div>
+          <div class="textSkill" style="color: lightseagreen">( Expert )</div>
+        </div>
+        <div class="barGreen" style="width: 99%"></div>
+
+        <div class="skillRow">
+          <div class="subTitleSkill">React JS</div>
+          <div class="textSkill" style="color: lightseagreen">( Expert )</div>
+        </div>
+
+        <div class="barGreen" style="width: 99%"></div>
+
+        <div class="skillRow">
+          <div class="subTitleSkill">Node JS</div>
+          <div class="textSkill">( Excellent )</div>
+        </div>
+        <div class="bar" style="width: 80%"></div>
+
+        <div class="skillRow">
+          <div class="subTitleSkill">Android</div>
+          <div class="textSkill" style="color: gray">( Good )</div>
+        </div>
+        <div class="barGray" style="width: 65%"></div>
+
+        <div class="skillRow">
+          <div class="subTitleSkill">SpringBoot</div>
+          <div class="textSkill" style="color: gray">( Average )</div>
+        </div>
+        <div class="barGray" style="width: 50%"></div>
+
+        <div class="tools" style="margin-top: 40px">
+          <div class="header">
+            <div class="headerText" style="font-size: 15px">Languages</div>
+          </div>
+          <p style="font-size: 15px">
+            JavaScript, TypeScript, Java, Python, Kotlin
+          </p>
+          <div class="header">
+            <div class="headerText" style="font-size: 15px">DB</div>
+          </div>
+          <p style="font-size: 15px">
+            MongoDB, PostGres, GraphQl, Sql, Firestore
+          </p>
+
+          <div class="header">
+            <div class="headerText" style="font-size: 15px">Cloud</div>
+          </div>
+          <p style="font-size: 15px">
+            AWS Cognito and Lambda, Google Cloud functions, Firebase, Expo EAS
+          </p>
+
+          <div class="header">
+            <div class="headerText" style="font-size: 15px">
+              Testing and automation
+            </div>
+          </div>
+          <p style="font-size: 15px">Jest, Playwright, Appium</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
